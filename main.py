@@ -16,7 +16,7 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT+30))
 
 font = pygame.font.Font('freesansbold.ttf', 15)
 game = Game(screen, obj, WIDTH, HEIGHT, 20, font)
-sprite_move = game.wait_and_run(100)
+sprite_move = game.wait_and_run(500)
 
 # MAIN LOOP
 while 1:  
