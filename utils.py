@@ -2,7 +2,7 @@ import pygame
 from random import randint, choice
 
 class Game:
-    NoOfElements = 20
+    NoOfElements = 10
     score = {"stone":NoOfElements, "paper":NoOfElements, "scissor":NoOfElements}
     
     def __init__(self,screen, obj, width, height, size, font):
@@ -33,7 +33,7 @@ class Game:
     
     def gameover(self):
         for obj in self.score:
-            if self.score[obj]==60:
+            if self.score[obj]==30:
                 text = self.font.render(f'Game over {obj} wins', True, (255,0,0))
                 self.screen.blit(text, (100,200))
     
